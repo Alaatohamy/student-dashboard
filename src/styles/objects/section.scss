@@ -1,0 +1,41 @@
+.section {
+  padding: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(134, 131, 131, 0.28);
+  color: grey;
+
+  &__header {
+    margin-block-end: 30px;
+
+    &::before,
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &__content {
+      float: left;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__note {
+    font-size: 12px;
+    color: #bdbaba;
+  }
+
+  &__link {
+    float: right;
+    font-weight: bold;
+    font-size: 14px;
+    color: #32bdbd;
+  }
+}
