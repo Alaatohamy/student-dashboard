@@ -2,8 +2,10 @@ import React from "react";
 import { ReactComponent as Notification } from "assets/notification.svg";
 import { ReactComponent as Email } from "assets/email.svg";
 import "./header.style.scss";
+import defaultImg from "assets/user.svg";
 
 const Header = () => {
+  const userData = { img: "" };
   return (
     <header className="main-header">
       {/* [TODO] Add user name */}
@@ -25,7 +27,11 @@ const Header = () => {
         <Notification className="main-header__icon" title="notification" />
         <Email className="main-header__icon" title="email" />
         {/* [TODO] Add user img */}
-        <img src="" alt="user" className="main-header__user-img" />
+        <img
+          src={userData.img ? userData.img : defaultImg}
+          alt="user"
+          className="main-header__user-img"
+        />
         <ul className="main-header__user-dropdown">
           <li>Log out</li>
         </ul>
