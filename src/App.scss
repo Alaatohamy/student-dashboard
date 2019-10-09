@@ -1,0 +1,8 @@
+.content {
+  padding: 25px;
+
+  &-wrapper {
+    display: inline-block;
+    width: calc(100% - 300px);
+  }
+}

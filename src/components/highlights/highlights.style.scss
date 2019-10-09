@@ -1,0 +1,25 @@
+.highlights {
+  background-image: url('../../assets/highlight-background.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 30% 100%;
+
+  &__title {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    background: -webkit-linear-gradient(0.25turn, #15567a, #32bdbd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__content {
+    font-size: 14px;
+    max-width: 70%;
+  }
+
+  &__quat {
+    color: #bdbaba;
+    font-size: 12px;
+  }
+}

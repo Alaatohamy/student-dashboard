@@ -1,6 +1,6 @@
 import React from "react";
-import { Header, Sidebar } from "components";
-import "./App.css";
+import { Header, Sidebar, Highlights, Announcements } from "components";
+import "./App.scss";
 import "styles/index.scss";
 
 function App() {
@@ -8,8 +8,12 @@ function App() {
     <div className="App">
       <div className="container">
         <Sidebar />
-        <div className="content">
+        <div className="content-wrapper">
           <Header />
+          <div className="content">
+            <Highlights />
+            <Announcements />
+          </div>
         </div>
       </div>
     </div>
