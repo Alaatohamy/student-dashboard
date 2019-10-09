@@ -1,0 +1,56 @@
+.main-nav {
+  background: linear-gradient(#15567a, #3b8198);
+  display: inline-block;
+  width: 250px;
+  height: 100vh;
+  color: #fff;
+  text-transform: capitalize;
+
+  &__header {
+    text-align: center;
+    margin: 30px 0 50px;
+    font-size: 30px;
+  }
+
+  &__icon {
+    fill: #fff;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    margin-right: 25px;
+    vertical-align: middle;
+  }
+
+  a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  li {
+    line-height: 50px;
+    padding-inline-start: 35px;
+
+
+
+    &:hover {
+      background-color: #fff;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 7px;
+        height: 50px;
+        background: linear-gradient(#32bdbd, #15567a);
+      }
+
+      * {
+        color: #15567a;
+        fill: #15567a;
+      }
+    }
+  }
+}

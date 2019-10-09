@@ -4,4 +4,8 @@
   margin-inline-end: auto;
   padding-inline-start: 15px;
   padding-inline-end: 15px;
+
+  &>* {
+    vertical-align: top;
+  }
 }
