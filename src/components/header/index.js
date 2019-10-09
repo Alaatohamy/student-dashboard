@@ -5,11 +5,10 @@ import "./header.style.scss";
 import defaultImg from "assets/user.svg";
 
 const Header = () => {
-  const userData = { img: "" };
+  const userData = { name: "Tala", img: "" };
   return (
     <header className="main-header">
-      {/* [TODO] Add user name */}
-      <h2 className="main-header__title"> Welcome Tala,</h2>
+      <h2 className="main-header__title"> Welcome {userData.name},</h2>
       <div className="main-header__action-list">
         <label htmlFor="site-search" className="visually-hidden">
           search
@@ -26,7 +25,6 @@ const Header = () => {
         {/* [TODO] Add icons Number */}
         <Notification className="main-header__icon" title="notification" />
         <Email className="main-header__icon" title="email" />
-        {/* [TODO] Add user img */}
         <img
           src={userData.img ? userData.img : defaultImg}
           alt="user"
