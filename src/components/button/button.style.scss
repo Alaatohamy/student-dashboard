@@ -1,0 +1,31 @@
+.button {
+  cursor: pointer;
+
+  &.filled {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 25px;
+    color: #fff;
+    background-color: #51cac4;
+    border-radius: 5px;
+    border: 0;
+
+    &:hover {
+      border: 1px solid #4e8a87;
+    }
+  }
+
+  &.transparent {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 35px;
+    color: #51cac4;
+    border: 2px solid #51cac4;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #51cac4;
+      color: #fff;
+    }
+  }
+}
