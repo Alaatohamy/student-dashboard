@@ -1,32 +1,13 @@
-import React from "react";
-import { ReactComponent as Event } from "assets/event.svg";
-import { ReactComponent as Time } from "assets/sands-of-time.svg";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
 import { CustomButton } from "components";
+import { fakeQuizService } from "redux/quizzes/actions";
 import "./calender.style.scss";
 
-const Calender = () => {
-  const CalenderData = [
-    {
-      key: 1,
-      title: "Unit 2 quiz",
-      icon: Time,
-      iconTitle: "event",
-      course: "Physics 02",
-      topic: "Unit2 Motion and forces",
-      dueTo: "20 Dec 2017 - 09:00 PM",
-      buttonText: "Start Quiz"
-    },
-    {
-      key: 2,
-      title: "12 - 12 Assignment",
-      icon: Event,
-      iconTitle: "event",
-      course: "Arabic K12",
-      topic: "الوحدة الثانية - الافعال",
-      dueTo: "20 Dec 2017 - 09:00 PM",
-      buttonText: "Solve Assignment"
-    }
-  ];
+const Calender = ({ calenderData, getQuizzesList }) => {
+  useEffect(() => {
+    getQuizzesList();
+  }, [getQuizzesList]);
 
   return (
     <section className="calender section">
@@ -40,7 +21,7 @@ const Calender = () => {
         </a>
       </header>
       <ul>
-        {CalenderData.map(
+        {calenderData.map(
           ({
             key,
             title,
@@ -89,4 +70,15 @@ const Calender = () => {
   );
 };
 
-export default Calender;
+const mapState = state => ({
+  calenderData: state.quiz.quizzesList
+});
+
+const mapDispatch = dispatch => ({
+  getQuizzesList: () => dispatch(fakeQuizService())
+});
+
+export default connect(
+  mapState,
+  mapDispatch
+)(Calender);
