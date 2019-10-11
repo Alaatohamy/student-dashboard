@@ -26,7 +26,11 @@ const Sidebar = () => {
           return (
             <li key={item.name}>
               <a href={`/${item.name}`}>
-                <Icon className="main-nav__icon" aril-role="personation" />
+                <Icon
+                  className="main-nav__icon"
+                  aril-role="personation"
+                  title={item.name}
+                />
                 {item.name}
               </a>
             </li>
