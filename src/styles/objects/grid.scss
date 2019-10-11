@@ -1,9 +1,12 @@
 .container {
-  max-width: 1200px;
   margin-inline-start: auto;
   margin-inline-end: auto;
   padding-inline-start: 15px;
   padding-inline-end: 15px;
+
+  @media (min-width: 1450px) {
+    max-width: 1400px;
+  }
 
   &>* {
     vertical-align: top;

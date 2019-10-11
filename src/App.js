@@ -1,5 +1,11 @@
 import React from "react";
-import { Header, Sidebar, Highlights, Announcements } from "components";
+import {
+  Header,
+  Sidebar,
+  Highlights,
+  Announcements,
+  Calender
+} from "components";
 import "./App.scss";
 import "styles/index.scss";
 
@@ -13,6 +19,7 @@ function App() {
           <div className="content">
             <Highlights />
             <Announcements />
+            <Calender />
           </div>
         </div>
       </div>

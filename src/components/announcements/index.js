@@ -11,7 +11,9 @@ const Announcements = () => {
       position: "Senior frontend",
       content: [
         "Search on me to get latest tech news ",
-        <span aria-label="Smiling Face with Sunglass">&#128526;</span>
+        <span key="emoji_1" role="img" aria-label="Smiling Face with Sunglass">
+          &#128526;
+        </span>
       ]
     },
     {
@@ -20,7 +22,9 @@ const Announcements = () => {
       position: "Senior frontend",
       content: [
         "Search on My talk about GraphQL Clients ",
-        <span aria-label="Smiling Face with Sunglass">&#128526;</span>
+        <span key="emoji_2" role="img" aria-label="Smiling Face with Sunglass">
+          &#128526;
+        </span>
       ]
     },
     {
