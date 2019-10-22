@@ -1,0 +1,12 @@
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  button.button.filled {
+    width: 300px;
+    height: 90px;
+    font-size: 35px;
+  }
+}
