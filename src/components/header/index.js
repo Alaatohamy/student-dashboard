@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { connect } from "react-redux";
+import { logout } from "redux/user/actions";
 import { ReactComponent as Notification } from "assets/notification.svg";
 import { ReactComponent as Email } from "assets/email.svg";
-import "./header.style.scss";
 import defaultImg from "assets/user.svg";
+import "./header.style.scss";
 
-const Header = () => {
+const Header = ({ logout }) => {
   const userData = { name: "Tala", img: "" };
+  const [clicked, setClicked] = useState(false);
   return (
     <header className="main-header">
       <h2 className="main-header__title"> Welcome {userData.name},</h2>
@@ -29,13 +32,25 @@ const Header = () => {
           src={userData.img ? userData.img : defaultImg}
           alt="user"
           className="main-header__user-img"
+          onClick={() => setClicked(!clicked)}
         />
-        <ul className="main-header__user-dropdown">
-          <li>Log out</li>
-        </ul>
+        {clicked ? (
+          <ul className="main-header__user-dropdown">
+            <li className="logout" onClick={logout}>
+              Log out
+            </li>
+          </ul>
+        ) : null}
       </div>
     </header>
   );
 };
 
-export default Header;
+const mapDispatch = dispatch => ({
+  logout: () => dispatch(logout())
+});
+
+export default connect(
+  null,
+  mapDispatch
+)(Header);
