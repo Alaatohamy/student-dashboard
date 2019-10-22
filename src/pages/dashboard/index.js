@@ -6,9 +6,10 @@ import {
   Announcements,
   Calender
 } from "components";
+import "./dashboard.style.scss";
 
 const Dashboard = () => (
-  <>
+  <div className="container">
     <Sidebar />
     <div className="content-wrapper">
       <Header />
@@ -18,7 +19,7 @@ const Dashboard = () => (
         <Calender />
       </div>
     </div>
-  </>
+  </div>
 );
 
 export default Dashboard;
