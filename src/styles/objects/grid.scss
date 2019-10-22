@@ -9,6 +9,10 @@
     padding-inline-end: 15px;
   }
 
+  @media (max-width: 787px) {
+    position: relative;
+  }
+
   &>* {
     vertical-align: top;
   }

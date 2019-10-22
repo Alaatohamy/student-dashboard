@@ -19,7 +19,9 @@ const Sidebar = () => {
 
   return (
     <nav className="main-nav">
-      <h1 className="main-nav__header">Coligo</h1>
+      <h1 className="main-nav__header">
+        {window.screen.width <= 787 ? "C" : "Coligo"}
+      </h1>
       <ul>
         {navData.map(item => {
           const Icon = item.icon;
@@ -31,7 +33,7 @@ const Sidebar = () => {
                   aril-role="personation"
                   title={item.name}
                 />
-                {item.name}
+                {window.screen.width <= 787 ? null : item.name}
               </a>
             </li>
           );

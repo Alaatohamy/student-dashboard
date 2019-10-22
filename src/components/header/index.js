@@ -8,7 +8,7 @@ import "./header.style.scss";
 
 const Header = ({ logout }) => {
   const userData = { name: "Tala", img: "" };
-  const [clicked, setClicked] = useState(false);
+  const [clickedUserImg, setClickedUserImg] = useState(false);
   return (
     <header className="main-header">
       <h2 className="main-header__title"> Welcome {userData.name},</h2>
@@ -32,9 +32,9 @@ const Header = ({ logout }) => {
           src={userData.img ? userData.img : defaultImg}
           alt="user"
           className="main-header__user-img"
-          onClick={() => setClicked(!clicked)}
+          onClick={() => setClickedUserImg(!clickedUserImg)}
         />
-        {clicked ? (
+        {clickedUserImg ? (
           <ul className="main-header__user-dropdown">
             <li className="logout" onClick={logout}>
               Log out

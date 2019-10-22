@@ -4,6 +4,10 @@
   background-position: right;
   background-size: 30% 100%;
 
+  @media (max-width: 787px) {
+    background-image: unset;
+  }
+
   &__title {
     font-size: 30px;
     text-transform: uppercase;

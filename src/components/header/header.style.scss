@@ -1,5 +1,4 @@
 .main-header {
-  height: 50px;
   line-height: 48px;
   padding: 20px 20px 20px 40px;
 
@@ -29,6 +28,10 @@
     border: 1px solid #8080802e;
     padding: 5px;
     font-size: 12px;
+
+    @media (max-width: 787px) {
+      margin-inline-end: 20px;
+    }
   }
 
   &__icon {
