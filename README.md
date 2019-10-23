@@ -9,6 +9,7 @@
 - Handle async Request with saga middleware.
 - All the actions is fake, and the endpoints too.
 - Login and logout is just a toggle state.
+- `Logout` by clicking on the user icon then logout link.
 
 ### Deployed Version
 
