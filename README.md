@@ -13,7 +13,7 @@
 
 ### Deployed Version
 
-You could check the deployed version from this [link]: ()
+You could check the deployed version from this [link](https://alaatohamy.github.io/student-dashboard/)
 
 ### More Info
 
