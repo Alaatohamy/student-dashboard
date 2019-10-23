@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/student-dashboard/static/css/main.4a247d9c.chunk.css",
+    "main.js": "/student-dashboard/static/js/main.47702547.chunk.js",
+    "main.js.map": "/student-dashboard/static/js/main.47702547.chunk.js.map",
+    "runtime-main.js": "/student-dashboard/static/js/runtime-main.82fb1f5c.js",
+    "runtime-main.js.map": "/student-dashboard/static/js/runtime-main.82fb1f5c.js.map",
+    "static/js/2.6b918826.chunk.js": "/student-dashboard/static/js/2.6b918826.chunk.js",
+    "static/js/2.6b918826.chunk.js.map": "/student-dashboard/static/js/2.6b918826.chunk.js.map",
+    "index.html": "/student-dashboard/index.html",
+    "precache-manifest.b6ebeb16f7f33156737f73bf2c6efad7.js": "/student-dashboard/precache-manifest.b6ebeb16f7f33156737f73bf2c6efad7.js",
+    "service-worker.js": "/student-dashboard/service-worker.js",
+    "static/css/main.4a247d9c.chunk.css.map": "/student-dashboard/static/css/main.4a247d9c.chunk.css.map",
+    "static/media/calendar.9fbaaf7c.svg": "/student-dashboard/static/media/calendar.9fbaaf7c.svg",
+    "static/media/email.daa9a3f1.svg": "/student-dashboard/static/media/email.daa9a3f1.svg",
+    "static/media/event.57a25d29.svg": "/student-dashboard/static/media/event.57a25d29.svg",
+    "static/media/file.21ebacba.svg": "/student-dashboard/static/media/file.21ebacba.svg",
+    "static/media/graduate.fba6f52a.svg": "/student-dashboard/static/media/graduate.fba6f52a.svg",
+    "static/media/highlights.style.scss": "/student-dashboard/static/media/highlight-background.a1a27a98.png",
+    "static/media/home.a46bb50a.svg": "/student-dashboard/static/media/home.a46bb50a.svg",
+    "static/media/notification.66827f9f.svg": "/student-dashboard/static/media/notification.66827f9f.svg",
+    "static/media/profits.6f70b9c8.svg": "/student-dashboard/static/media/profits.6f70b9c8.svg",
+    "static/media/sands-of-time.2bbf1aab.svg": "/student-dashboard/static/media/sands-of-time.2bbf1aab.svg",
+    "static/media/speaker.4c288b47.svg": "/student-dashboard/static/media/speaker.4c288b47.svg",
+    "static/media/user.svg": "/student-dashboard/static/media/user.5e946c20.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82fb1f5c.js",
+    "static/js/2.6b918826.chunk.js",
+    "static/css/main.4a247d9c.chunk.css",
+    "static/js/main.47702547.chunk.js"
+  ]
+}
