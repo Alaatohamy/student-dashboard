@@ -1,0 +1,30 @@
+.calender {
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 270px;
+
+  button {
+    width: 90%;
+  }
+
+  p {
+    font-size: 14px;
+    color: #bdbaba;
+    margin: 10px 0;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    fill: #3f8e9f;
+    margin-inline-end: 10px;
+    vertical-align: middle;
+  }
+
+  li+li {
+    border-top: 1px solid #e4e1e1;
+    margin-block-start: 25px;
+    padding-block-start: 25px;
+  }
+}

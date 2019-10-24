@@ -1,0 +1,48 @@
+.announcements {
+  margin-top: 20px;
+
+  @media (max-width: 787px) {
+    margin-top: 10px;
+  }
+
+  .announcement {
+    margin-block-end: 20px;
+
+    &__img {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+
+    &__content {
+      display: inline-block;
+      width: 70%;
+      margin: 0 30px;
+      vertical-align: top;
+
+      @media (max-width: 787px) {
+        margin: 5px 0 0 40px
+      }
+    }
+
+    &__owner {
+      display: inline-block;
+      margin-inline-start: 15px;
+      vertical-align: middle;
+
+      &__name {
+        font-weight: bold;
+        color: #232323;
+        font-size: 14px;
+        margin: 0;
+      }
+
+      &__position {
+        font-size: 12px;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  max-width: 100%;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+
+  @media (min-width: 1450px) {
+    max-width: 1440px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+  }
+
+  @media (max-width: 787px) {
+    position: relative;
+  }
+
+  &>* {
+    vertical-align: top;
+  }
+}
